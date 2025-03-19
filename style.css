@@ -175,15 +175,11 @@ h3 {
         height: 60rem;
     }
     .footer {
-        
         flex-direction: row;
         justify-content: space-between;
   
     }
-    .footer ul{
-        margin-right:2rem;
-    }
-
+  
     .footerAddress p:first-child{
         font-size: 2rem;
     }
@@ -198,6 +194,7 @@ h3 {
     .footer ul  {
         margin-top: 2rem;
         margin-left:2rem;
+        margin-right:2rem;
     }
 }
 
