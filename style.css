@@ -152,7 +152,7 @@ h3 {
     font-family: margesh;
 }
 
- ul li:first-child {
+.footer ul li:first-child {
     font-weight: bold;
 }
 @media (min-width: 1024px) { 
@@ -165,7 +165,7 @@ h3 {
     .card{
         margin:2rem;
     }
-    .btn{
+    .btn-card{
         display: none;
     }
 
