@@ -155,6 +155,8 @@ h3 {
 .footer ul li:first-child {
     font-weight: bold;
 }
+
+
 @media (min-width: 1024px) { 
 
     .cardSection{
@@ -177,6 +179,9 @@ h3 {
         flex-direction: row;
         justify-content: space-between;
   
+    }
+    .footer ul{
+        margin-right:2rem;
     }
 
     .footerAddress p:first-child{
