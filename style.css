@@ -3,6 +3,23 @@
     padding:0;
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:whitesmoke
+}
+
+body{
+    background-color: whitesmoke;
+}
+.logo { 
+    font-family: margesh;
+    font-size: 1.8rem;
+}
+
 .imgContainer{
 
     position: relative;
@@ -39,12 +56,104 @@
 
 .card {
     width: 25rem;
-    height: 23rem;
+    height: 27rem;
+    transition: transform 0.3s;
+}
+.card:hover{
+
+    transform: scale(1.1);
 }
 
 .card-img-top{
     width: auto;
     height: 18rem;
+}
+
+h3 {
+ font-weight: bold;
+ font-size: 1.6rem;
+}
+.btn{
+    background-color: rgb(240, 99, 99);
+    color:whitesmoke;
+    font-weight: bold;
+    border: none;
+}
+
+.actus{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+
+
+.sliderContent{
+    display: flex;
+    flex-wrap:nowrap;
+    overflow: hidden;
+}
+
+.sliderContentItem{
+    position: relative;
+    min-width: 100%;
+    height: 25rem;
+    transition: all 0.5s linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sliderText{
+
+    position: absolute;
+    bottom: 10%;
+    left:50%;
+    transform:  translate(-50%);
+    padding: 0.5rem;
+    border-radius: 3px; 
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: calc(1.2rem + 0.5vw);
+    font-weight: bolder;
+}
+
+.item1{
+    background-image: url("https://lp-cms-production.imgix.net/2024-07/shutterstock2180575977.jpg?auto=format,compress&q=72&w=1440&h=810&fit=crop");
+}
+
+.item2{
+    background-image: url("https://dev.nicecarnaval.com/wp-content/uploads/2022/11/carnaval-bataille-fleurs-2020-3.jpg");
+}
+
+.item3{
+    background-image: url("https://cdn.sortiraparis.com/images/80/105766/1040097-la-scene-barbes-le-comedy-club-au-style-new-yorkais.jpg");
+}
+
+.item4{
+    background-image: url("https://france.makesense.org/wp-content/uploads/sites/6/2023/07/5-manieres-de-danser-pour-resister-makesense.jpeg");
+}
+
+.footer {
+    background-color: rgb(51, 51, 51);
+    flex-direction: column;
+    color:whitesmoke
+}
+
+.footerAddress{
+    margin-top: 2rem;
+    margin-left:2rem;
+    line-height: 0.7rem;
+}
+
+.footerAddress p:first-child{
+    font-family: margesh;
+}
+
+ ul li:first-child {
+    font-weight: bold;
 }
 @media (min-width: 1024px) { 
 
@@ -56,5 +165,41 @@
     .card{
         margin:2rem;
     }
-    
+    .btn{
+        display: none;
+    }
+
+    .sliderContentItem{
+        height: 60rem;
+    }
+    .footer {
+        
+        flex-direction: row;
+        justify-content: space-between;
+  
+    }
+
+    .footerAddress p:first-child{
+        font-size: 2rem;
+    }
+
+    .footerAddress{
+        margin-top: initial;
+        line-height: initial;
+        margin-left:2rem;
+
+    }
+
+    .footer ul  {
+        margin-top: 2rem;
+        margin-left:2rem;
+    }
 }
+
+@font-face {
+    font-family: "margesh";
+    src:
+      url("fonts/Margesh.otf") format("opentype")
+
+  }
+  
