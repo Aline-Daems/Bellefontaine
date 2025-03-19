@@ -39,6 +39,10 @@ input{
     align-items: center;
 }
 
+.cardContainer .card{
+    height: 80vh;
+}
+
 h3{
     margin-left:1rem;
     margin-bottom: 2rem;
